@@ -1,12 +1,12 @@
 <?php
 
-namespace VendorName\Skeleton\Commands;
+namespace alejandroaporras\FileVault\Commands;
 
 use Illuminate\Console\Command;
 
-class SkeletonCommand extends Command
+class FileVaultCommand extends Command
 {
-    public $signature = 'skeleton';
+    public $signature = 'file-vault';
 
     public $description = 'My command';
 
