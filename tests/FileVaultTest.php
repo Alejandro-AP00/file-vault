@@ -2,8 +2,8 @@
 
 use AlejandroAPorras\FileVault\Facades\FileVault;
 use Illuminate\Foundation\Application;
-use Illuminate\Support\Facades\Storage;
 use Illuminate\Support\Facades\Config;
+use Illuminate\Support\Facades\Storage;
 
 /**
  * Generate a random key for the application.
@@ -11,11 +11,11 @@ use Illuminate\Support\Facades\Config;
 function generateRandomKey(): string
 {
     return 'base64:'.base64_encode(
-            \AlejandroAPorras\FileVault\FileVault::generateKey()
-        );
+        \AlejandroAPorras\FileVault\FileVault::generateKey()
+    );
 }
 
-beforeEach(function (){
+beforeEach(function () {
     Config::set('filesystems.default.local.driver', 'local');
     Config::set('filesystems.disks.local.root', realpath(__DIR__.'/../storage/app'));
     Config::set('filesystems.default', 'local');
