@@ -1,8 +1,8 @@
 <?php
 
-namespace alejandroaporras\FileVault\Tests;
+namespace AlejandroAPorras\FileVault\Tests;
 
-use alejandroaporras\FileVault\FileVaultServiceProvider;
+use AlejandroAPorras\FileVault\FileVaultServiceProvider;
 use Illuminate\Database\Eloquent\Factories\Factory;
 use Orchestra\Testbench\TestCase as Orchestra;
 
@@ -13,7 +13,7 @@ class TestCase extends Orchestra
         parent::setUp();
 
         Factory::guessFactoryNamesUsing(
-            fn (string $modelName) => 'alejandroaporras\\FileVault\\Database\\Factories\\'.class_basename($modelName).'Factory'
+            fn (string $modelName) => 'AlejandroAPorras\\FileVault\\Database\\Factories\\'.class_basename($modelName).'Factory'
         );
     }
 

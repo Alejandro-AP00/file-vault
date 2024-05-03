@@ -1,6 +1,6 @@
 <?php
 
-namespace alejandroaporras\FileVault\Database\Factories;
+namespace AlejandroAPorras\FileVault\Database\Factories;
 
 use Illuminate\Database\Eloquent\Factories\Factory;
 

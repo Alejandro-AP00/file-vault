@@ -1,8 +1,7 @@
 <?php
 
-namespace alejandroaporras\FileVault;
+namespace AlejandroAPorras\FileVault;
 
-use alejandroaporras\FileVault\Commands\FileVaultCommand;
 use Spatie\LaravelPackageTools\Package;
 use Spatie\LaravelPackageTools\PackageServiceProvider;
 
@@ -17,9 +16,12 @@ class FileVaultServiceProvider extends PackageServiceProvider
          */
         $package
             ->name('file-vault')
-            ->hasConfigFile()
-            ->hasViews()
-            ->hasMigration('create_file-vault_table')
-            ->hasCommand(FileVaultCommand::class);
+            ->hasConfigFile();
+    }
+
+    public function packageRegistered(): void
+    {
+        $this->app->singleton(FileVault::class);
+        $this->app->alias(FileVault::class, 'file-vault');
     }
 }

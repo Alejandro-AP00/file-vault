@@ -1,6 +1,6 @@
 <?php
 
-namespace alejandroaporras\FileVault\Commands;
+namespace AlejandroAPorras\FileVault\Commands;
 
 use Illuminate\Console\Command;
 

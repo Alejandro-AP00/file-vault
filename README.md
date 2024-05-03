@@ -52,8 +52,8 @@ php artisan vendor:publish --tag="file-vault-views"
 ## Usage
 
 ```php
-$fileVault = new alejandroaporras\FileVault();
-echo $fileVault->echoPhrase('Hello, alejandroaporras!');
+$fileVault = new AlejandroAPorras\FileVault();
+echo $fileVault->echoPhrase('Hello, AlejandroAPorras!');
 ```
 
 ## Testing
