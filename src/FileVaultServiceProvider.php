@@ -2,9 +2,9 @@
 
 namespace alejandroaporras\FileVault;
 
+use alejandroaporras\FileVault\Commands\FileVaultCommand;
 use Spatie\LaravelPackageTools\Package;
 use Spatie\LaravelPackageTools\PackageServiceProvider;
-use alejandroaporras\FileVault\Commands\FileVaultCommand;
 
 class FileVaultServiceProvider extends PackageServiceProvider
 {

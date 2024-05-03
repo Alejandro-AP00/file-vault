@@ -2,9 +2,9 @@
 
 namespace alejandroaporras\FileVault\Tests;
 
+use alejandroaporras\FileVault\FileVaultServiceProvider;
 use Illuminate\Database\Eloquent\Factories\Factory;
 use Orchestra\Testbench\TestCase as Orchestra;
-use alejandroaporras\FileVault\FileVaultServiceProvider;
 
 class TestCase extends Orchestra
 {
